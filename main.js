@@ -10,6 +10,7 @@ var discountAnderage;
 var discountOver65;
 var priceTot;
 
+alert("La tariffa base del biglietto è 0.21€/km. Le chiederò i kilometri che deve percorrere e la sua età in modo da poterle dire il prezzo totale del biglietto.")
 
 // calcolo valore numerico sconto per minorenni
 discountAnderage = 20 / 100;
@@ -36,4 +37,5 @@ if (userAge < 18) {
   priceTot = price;
 }
 
-console.log(priceTot);
+// output
+document.getElementById('total-price').innerHTML = "Il prezzo totale del suo biglietto è di:" + " " + priceTot.toFixed(2) + "€";
